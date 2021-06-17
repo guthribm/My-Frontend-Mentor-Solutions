@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #d8e3e7;
+    width: 100vw;
 }
 
 .body-container {
