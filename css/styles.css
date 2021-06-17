@@ -1,110 +1,324 @@
+
 body {
+    color: #303841;
     margin: 0;
-    background-color: #d8e3e7;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.body-container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    border-radius: 12px;
-    width: 90vw;
-    padding: 1rem;
-    background-color: whitesmoke;
-    font-family: 'Overpass', sans-serif;
+h1 {
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    font-family: 'Over the Rainbow', cursive; 
+    color: #303841; 
+        
 }
 
-
-/* HEADER ATTRIBUTES */
-
-header {
-    background: white;
-    
+.subtitle {
+    font-weight: normal;
+    font-size: 1.5rem;
 }
 
-.navigation-header {
-    color: #132c33;
-    background:#d8e3e7;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Overpass', sans-serif; 
-    width: 100vw; 
-}
-
-.nav-left {
-    display: flex;
-    /* background-color: red; */
-
-}
-
-.navigation-header h3 {
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-}
-
-/* HEADER ATTRIBUTES */
-
-.content-container {
-    font-family: 'Overpass', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.skills {
     text-align: center;
 }
 
-.image-container {
-    margin-top: 1rem;
+h2 {
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #303841;
+    font-weight: bold;
 }
 
-.image-container img {
-    border: 2px solid #126e82;
-    border-radius: 9px; 
-    width: 90vw;   
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #ff5722;
+    margin-top: 50px;
+    font-size: 2rem;
 }
 
-.image-container img:hover {
-    box-shadow: 6px 6px 6px #126e82;
-    border: none;
-    width: 390px;
+a {
+    font-family: 'Open Sans', sans-serif;
+    color: #00adb5;
+    text-decoration: none;
 }
 
-figcaption {
-    font-family: 'Overpass', sans-serif;
-    margin: .5rem;
+a:hover {
+    color: #00adb5;
+    text-decoration: underline;
 }
 
-footer {
-    background-color: #d8e3e7;
-    text-align: right;
-    margin: 0 1rem;
-    font-family: 'Overpass', sans-serif;
-    color: #51C4D3;
-}
-
-@media (min-width: 925px) {
-    .content-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 480px) {
-    .image-container img {
-        width: auto;
-    }
-
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
     
+}
 
-    h1 {
+hr {
+    border: dotted #c9d6df 6px;
+    border-bottom: none;
+    width: 10%;
+    margin: 100px auto 100px auto;
+}
+
+.top_container {
+    background-color: #00adb5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.skill-row {
+    text-align: left;
+    margin: 75px auto 0 auto;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.skill-row-last {
+    text-align: left;
+    margin: 75px auto 100px auto;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.profile {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #303841;
+    margin-bottom: 60px;    
+}
+
+.profile_footer {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.middle-container {        
+    font-family: 'Open Sans', sans-serif;    
+    color: #303841;
+    margin: 100px 0 100px 0;
+         
+}
+
+.bottom-container {    
+    background-color: #00adb5;
+    padding: 25px;
+}
+
+.pro {
+    text-decoration: underline;    
+}
+
+.top_cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.bottom_cloud {
+    position: absolute;
+    left: 200px;
+    bottom: 300px;
+}
+
+.python_image {
+    
+    height: 45%;
+    width: 45%;
+    display: block; 
+    margin: 0 auto 0 auto;   
+    
+}
+
+.learn {
+    margin-top: 100px;
+}
+
+.web_dev {
+    height: 50%;
+    width: 50%;    
+    display: block; 
+    margin: 0 auto 0 auto;
+}
+
+.dog_whisperer {
+    height: 35%;
+    width: 35%;
+    display: block;
+    float: right; 
+    margin: 0 100px 0 0;
+        
+}
+
+
+.profile_pic {
+    height: 35%;
+    width: 35%;
+    
+}
+
+.udemy_python {
+    height: 40%;
+    width: 40%;
+    float: left;
+    margin: 0 60px 80px 0;
+}
+
+.udemy_web_dev {
+    height: 40%;
+    width: 40%;
+    float: left;
+    margin: 0 60px 80px 0;
+    clear: both;
+    
+}
+
+.bio {
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+
+
+.contact-me {
+    width: 40%;
+    margin: 40px auto 60px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+
+  .old_site {
+      color: #303841;
+      text-decoration: underline;
+      font-size: .8rem;
+  }
+
+  .copyright {
+      color: #c9d6df;
+      font-size: .8rem;
+      padding: 20px 0;
+  }
+
+@media (max-width: 450px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        
+    }
+
+    .subtitle {
+        position: relative;
+        z-index: 3;
+    }
+
+    .mountain {
+        width: 100%;
+    }
+
+    .bottom_cloud {
+        left: 225px;
+    }
+
+    .profile_pic {
+        width: 70%;
+        margin-bottom: 4rem;
+    }
+
+    .python_image {
+        width: 100%;
+    }
+
+    .web_dev {
+        width: 100%;
+    }
+
+    .skill-row {
         text-align: center;
     }
 
-    footer {
+    .dog_whisperer {
+        margin: auto;
+        width: 65%;
+        float: none;
+    }
+
+    .udemy_python {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .middle-container {
+        margin: 100px 0 0 0;
+    }
+
+    h2 {
+        padding: 1rem;
+    }
+
+    h3 {
+        margin-top: 1rem;
+    }
+
+    .udemy_web_dev {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    .skill-row-last {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .learn {
+        margin-top: 1rem;
+    }
+
+    .skill-row a {
         display: flex;
-        justify-content: flex-end;
-        width: 90%;
-        margin: 2rem;
+        justify-content: center;
+    }
+
+    .contact-me {
+        width: 100%;
+    }
+
+    .bottom-container {
+        padding: 25px 0 0 0;
+    }
+
+    .btn {
+        margin-top: 2rem;
     }
 }
-
