@@ -1,0 +1,261 @@
+/* Header attributes */
+.navigation-header {
+    color: #132c33;
+    background:#d8e3e7;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+
+
+.nav-left {
+    display: flex;
+    /* background-color: red; */
+
+}
+
+.navigation-header h3 {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+
+
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+/* hsl(184, 100%, 22%) */
+
+/* =================================================================================== */
+
+/* ==================== Designed for Mobile Width 375px-425px ======================== */
+
+/* =================================================================================== */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+    margin: 15px 0 0 0;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+p {
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.8;
+    width: 88%;
+}
+
+.button {
+    width: 37vw;
+    border-radius: 25px;
+    border: none;
+    padding: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+.body-container {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 50px 20px 50px;
+    height: 60vh;
+    width: 65vw;    
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 8px 0 0;
+    margin-top: 60px;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan .button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv button {
+    color: hsl(184, 100%, 22%); 
+}
+
+.suv button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 60px;
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    margin-top: 150px;
+}
+
+.foot-item {
+    display: flex;
+    justify-content: space-evenly;    
+    margin: 0;
+    text-align: center;
+    width: 70vw;
+    color: grey;
+}  
+
+.challenge a {
+    color: hsl(31, 77%, 52%);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.signature a{
+    color: hsl(184, 100%, 22%);
+    text-decoration: none;
+}
+
+.target a {
+    color:hsl(179, 100%, 13%);
+    text-decoration: none;
+}
+
+.mobile {
+    display: inline-block;
+}
+
+.desktop {
+    display: none;
+}
+
+
+/* =================================================================================== */
+
+/* ======================= Designed for 1440p Desktop ================================= */
+
+/* =================================================================================== */
+
+
+ 
+@media (min-width: 450px) {
+    
+    body {
+        display: flex;
+        padding: 7rem;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 6vh;
+        margin: 5vh 0 2vh 0;       
+    }
+
+    p { 
+        width: 87%;       
+        margin-bottom: 16vh;
+        height: 16vh;
+        font-size: 1.95vh;
+    }
+
+    .image {
+        margin-top: 1rem;
+    }
+
+    .button {
+        height: 7vh;
+        font-size: 2vh;
+        width: 11vw;
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .body-container {
+        flex-direction: row;
+        width: 80vw;
+        height: 60vh;
+    }
+
+    .container {
+        width: 18vw;
+        display: flex;
+        flex-direction: column;
+        padding-right: 0%;
+    }
+
+    .sedan {
+        margin-top: 0;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .luxury {
+        margin-bottom: 0;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .foot-item {
+        justify-content: center;
+    }
+
+    .foot-item a {
+        margin-left: 1rem;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: inline-block;
+    }
+
+}
