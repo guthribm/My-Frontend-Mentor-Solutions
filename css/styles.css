@@ -14,13 +14,6 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
-.body-container h2 {
-    text-align: left;
-    color: tomato;
-    padding: 0 10vw;
-    margin: 0 0 4rem 0;
-}
-
 
 /* HEADER ATTRIBUTES */
 
@@ -76,7 +69,7 @@ h1 {
 .image-container img {    
     border-radius: 9px; 
     width: 90vw;   
-    box-shadow: 8px 8px 6px #126e82;
+    box-shadow: 6px 6px 6px #126e82;
 }
 
 .image-container img:hover {    
@@ -135,10 +128,6 @@ footer {
         justify-content: flex-end;
         width: 90%;
         margin: 2rem;
-    }
-    
-    .body-container h2 {
-    text-align: center;
     }
 }
 
