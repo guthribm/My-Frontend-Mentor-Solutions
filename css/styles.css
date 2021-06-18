@@ -15,7 +15,7 @@ body {
 }
 
 .body-container h2 {
-    text-align: center;
+    text-align: left;
     color: tomato;
     padding: 0 10vw;
     margin: 0 0 4rem 0;
@@ -135,6 +135,10 @@ footer {
         justify-content: flex-end;
         width: 90%;
         margin: 2rem;
+    }
+    
+    .body-container h2 {
+    text-align: center;
     }
 }
 
