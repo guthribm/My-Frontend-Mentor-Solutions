@@ -20,6 +20,11 @@ h4, h5 {
     margin: 0;
 }
 
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
 h4, h1 {
     color: white;
 }
@@ -28,10 +33,24 @@ p, h5 {
     color: hsl(0, 0%, 81%);
 }
 
+p {
+    letter-spacing: .2px;
+    line-height: 1.5;
+}
+
+article {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
 section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    padding: 1.5rem;
-    margin: 1rem 2rem;
+    padding: 2rem 2.5rem;
+    margin: 1rem;
     border-radius: 12px;
 }
 
@@ -55,25 +74,46 @@ section {
 }
 
 .kira h1, .kira h4, .jeanette h1, .jeanette h4 {
-    color: hsl(219, 29%, 14%);
+    color: hsl(217, 19%, 35%);
 }
 
 .kira p, .kira h5, .jeanette p, .jeanette h5 {
     color: hsl(217, 19%, 35%);
 }
 
-.daniel {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(263, 55%, 52%);
-}
 
-/* colored backgrounds with white letters in h5 and p set to 50% opacity */
-.daniel h5, .daniel p, .jonathan h5, .jonathan p, .patrick h5, .patrick p {
+/* --------------------------------------------------------------------- */
+/* white letters in h5 set to 50% opacity */
+.daniel h5, .jonathan h5, .patrick h5 {
     color: white;
     opacity: 50%;
 }
 
-/* white backgrounds with dark letters in h5 and p set to 50% opacity */
+/* all paragraphs set to 70% opacity */
+.daniel p, .jonathan p, .patrick p, .kira p, .jeanette p {
+    opacity: 70%;
+}
+
+/* dark letters in h5 set to 50% opacity */
+.kira h5, .jeanette h5 {
+    opacity: 50%;
+}
+/* --------------------------------------------------------------------- */
+
+.quote {
+    z-index: 1;
+    position: absolute;
+    width: 35%;
+    right: 5vw;
+    top: 0vw;
+    border: none;
+    border-radius: 0;
+}
+
+.daniel {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(263, 55%, 52%);
+}
 
 .daniel img {    
     border-color: hsl(263, 55%, 52%);    
@@ -98,8 +138,12 @@ section {
 }
 
 .patrick {
-    color: hsl(0, 0%, 100%);
+    color: hsl(210, 46%, 95%);
     background-color: hsl(219, 29%, 14%);
+}
+
+.patrick h1 {
+    color: hsl(210, 46%, 95%);
 }
 
 .patrick img {
