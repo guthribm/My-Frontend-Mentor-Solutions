@@ -1,6 +1,6 @@
 /* font-family: 'Barlow Semi Condensed', sans-serif; */
 
-
+/* ==================Mobile View 450px or less===================== */
 
 body {    
     display: flex;
@@ -36,6 +36,7 @@ p, h5 {
 p {
     letter-spacing: .2px;
     line-height: 1.5;
+    font-weight: bold;
 }
 
 article {
@@ -103,7 +104,7 @@ section {
 .quote {
     z-index: 1;
     position: absolute;
-    width: 35%;
+    width: 32vw;
     right: 5vw;
     top: 0vw;
     border: none;
@@ -111,6 +112,7 @@ section {
 }
 
 .daniel {
+    grid-area: purp;
     color: hsl(0, 0%, 100%);
     background-color: hsl(263, 55%, 52%);
 }
@@ -120,6 +122,7 @@ section {
 }
 
 .jonathan {
+    grid-area: gry;
     color: hsl(0, 0%, 100%);
     background-color: hsl(217, 19%, 35%);
 }
@@ -129,6 +132,7 @@ section {
 }
 
 .jeanette {
+    grid-area: ylw;
     color: hsl(0, 0%, 81%);
     background-color: hsl(0, 0%, 100%);
 }
@@ -138,6 +142,7 @@ section {
 }
 
 .patrick {
+    grid-area: blk;
     color: hsl(210, 46%, 95%);
     background-color: hsl(219, 29%, 14%);
 }
@@ -152,10 +157,32 @@ section {
 }
 
 .kira {
+    grid-area: wht;
     color: hsl(217, 19%, 35%);
     background-color: hsl(0, 0%, 100%);
 }
 
 .kira img {
     border-color: white;
+}
+
+
+/* ======================Desktop View 1400px==================================== */
+
+@media (min-width: 450px) {
+
+    .quote {
+        display: none;
+    }
+
+    body {
+        
+        display: grid;  
+        grid-template-rows: 50vh 50vh;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-areas: 'purp purp gry wht'
+                             'ylw blk blk wht';      
+    }
+
+    
 }
