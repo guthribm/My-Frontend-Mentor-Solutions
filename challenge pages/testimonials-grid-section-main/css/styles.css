@@ -1,0 +1,117 @@
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
+
+
+
+body {    
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100vw;
+    background-color: hsl(210, 46%, 95%);
+}
+
+img {
+    border: 3px solid;
+    width: 60%;
+    border-radius: 30px;
+}
+
+h4, h5 {
+    margin: 0;
+}
+
+h4, h1 {
+    color: white;
+}
+
+p, h5 {
+    color: hsl(0, 0%, 81%);
+}
+
+section {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 1.5rem;
+    margin: 1rem 2rem;
+    border-radius: 12px;
+}
+
+.section-header {
+    /* background-color: green; */
+    display: flex;
+}
+
+.section-header-image {
+    /* background-color: red; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.section-header-title {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kira h1, .kira h4, .jeanette h1, .jeanette h4 {
+    color: hsl(219, 29%, 14%);
+}
+
+.kira p, .kira h5, .jeanette p, .jeanette h5 {
+    color: hsl(217, 19%, 35%);
+}
+
+.daniel {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(263, 55%, 52%);
+}
+
+/* colored backgrounds with white letters in h5 and p set to 50% opacity */
+.daniel h5, .daniel p, .jonathan h5, .jonathan p, .patrick h5, .patrick p {
+    color: white;
+    opacity: 50%;
+}
+
+/* white backgrounds with dark letters in h5 and p set to 50% opacity */
+
+.daniel img {    
+    border-color: hsl(263, 55%, 52%);    
+}
+
+.jonathan {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 19%, 35%);
+}
+
+.jonathan img {
+    border-color: white;
+}
+
+.jeanette {
+    color: hsl(0, 0%, 81%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.jeanette img {
+    border-color: white;
+}
+
+.patrick {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(219, 29%, 14%);
+}
+
+.patrick img {
+    width: 60%;
+    border: 3px solid hsl(263, 55%, 52%);
+}
+
+.kira {
+    color: hsl(217, 19%, 35%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.kira img {
+    border-color: white;
+}
