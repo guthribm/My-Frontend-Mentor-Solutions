@@ -1,134 +1,161 @@
-body {
-    margin: 0;
-    background-color: #d8e3e7;
-}
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
 
-.body-container {
+
+
+body {    
     display: flex;
     flex-direction: column;
     margin: auto;
-    border-radius: 12px;
-    width: 90vw;
-    padding: 1rem;
-    background-color: #51c4d3;
-    font-family: 'Overpass', sans-serif;
+    width: 100vw;
+    background-color: hsl(210, 46%, 95%);
 }
 
-
-/* HEADER ATTRIBUTES */
-
-header {
-    background: #d8e3e7;
-    display: inline-block;
-    
+img {
+    border: 3px solid;
+    width: 60%;
+    border-radius: 30px;
 }
 
-.navigation-header {
-    color: #132c33;
-    background:#d8e3e7;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Overpass', sans-serif; 
-    width: 100vw; 
-}
-
-.nav-left {
-    display: flex;
-    /* background-color: red; */
-
-}
-
-.navigation-header h3 {
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-}
-
-/* HEADER ATTRIBUTES */
-
-.content-container {
-    font-family: 'Overpass', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.image-container {
-    margin-top: 1rem;
-}
-
-header h3 {
-    color: #126e82;
+h4, h5 {
+    margin: 0;
 }
 
 h1 {
-    color: #126e82;
+    font-size: 1.5rem;
+    margin-bottom: 0;
 }
 
-.image-container img {
-    border: 2px solid #126e82;
-    border-radius: 9px; 
-    width: 90vw;   
+h4, h1 {
+    color: white;
 }
 
-.image-container img:hover {
-    box-shadow: 6px 6px 6px #126e82;
+p, h5 {
+    color: hsl(0, 0%, 81%);
+}
+
+p {
+    letter-spacing: .2px;
+    line-height: 1.5;
+}
+
+article {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 2rem 2.5rem;
+    margin: 1rem;
+    border-radius: 12px;
+}
+
+.section-header {
+    /* background-color: green; */
+    display: flex;
+}
+
+.section-header-image {
+    /* background-color: red; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.section-header-title {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kira h1, .kira h4, .jeanette h1, .jeanette h4 {
+    color: hsl(217, 19%, 35%);
+}
+
+.kira p, .kira h5, .jeanette p, .jeanette h5 {
+    color: hsl(217, 19%, 35%);
+}
+
+
+/* --------------------------------------------------------------------- */
+/* white letters in h5 set to 50% opacity */
+.daniel h5, .jonathan h5, .patrick h5 {
+    color: white;
+    opacity: 50%;
+}
+
+/* all paragraphs set to 70% opacity */
+.daniel p, .jonathan p, .patrick p, .kira p, .jeanette p {
+    opacity: 70%;
+}
+
+/* dark letters in h5 set to 50% opacity */
+.kira h5, .jeanette h5 {
+    opacity: 50%;
+}
+/* --------------------------------------------------------------------- */
+
+.quote {
+    z-index: 1;
+    position: absolute;
+    width: 35%;
+    right: 5vw;
+    top: 0vw;
     border: none;
-    width: 390px;
+    border-radius: 0;
 }
 
-figcaption {
-    font-family: 'Overpass', sans-serif;
-    margin: .5rem;
-    color: #126e82;
+.daniel {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(263, 55%, 52%);
 }
 
-footer {
-    background-color: #d8e3e7;
-    text-align: right;
-    margin: 0 1rem;
-    font-family: 'Overpass', sans-serif;
-    color: #51C4D3;
+.daniel img {    
+    border-color: hsl(263, 55%, 52%);    
 }
 
-@media (min-width: 925px) {
-    .content-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+.jonathan {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 19%, 35%);
 }
 
-@media (min-width: 480px) {
-
-    .navigation-header {
-        width: 100%;
-    }
-
-    .image-container img {
-        width: auto;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* header {
-
-    } */
-
-    h1 {
-        text-align: center;
-    }
-
-    footer {
-        display: flex;
-        justify-content: flex-end;
-        width: 90%;
-        margin: 2rem;
-    }
+.jonathan img {
+    border-color: white;
 }
 
+.jeanette {
+    color: hsl(0, 0%, 81%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.jeanette img {
+    border-color: white;
+}
+
+.patrick {
+    color: hsl(210, 46%, 95%);
+    background-color: hsl(219, 29%, 14%);
+}
+
+.patrick h1 {
+    color: hsl(210, 46%, 95%);
+}
+
+.patrick img {
+    width: 60%;
+    border: 3px solid hsl(263, 55%, 52%);
+}
+
+.kira {
+    color: hsl(217, 19%, 35%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.kira img {
+    border-color: white;
+}
