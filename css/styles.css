@@ -55,7 +55,10 @@ header {
 }
 
 .image-container {
+    border-radius: 12px;
     margin-top: 1rem;
+    padding: 1em 1em 0;
+    background-color: #d8e3e7;
 }
 
 header h3 {
@@ -66,10 +69,14 @@ h1 {
     color: #126e82;
 }
 
+h2 {
+    color: #6d6db5;
+}
+
 .image-container img {    
     border-radius: 9px; 
     width: 90vw;   
-    box-shadow: 6px 6px 6px #126e82;
+    box-shadow: 10px 10px 6px #126e82;
 }
 
 .image-container img:hover {    
@@ -96,6 +103,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 @media (min-width: 480px) {
@@ -105,7 +113,7 @@ footer {
     }
 
     .image-container img {
-        width: auto;
+        width: 360px;
     }
 
     body {
@@ -120,6 +128,10 @@ footer {
     } */
 
     h1 {
+        text-align: center;
+    }
+
+    h2 {
         text-align: center;
     }
 
