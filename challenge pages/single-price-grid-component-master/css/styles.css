@@ -29,8 +29,9 @@ header {
 
 
 span {
-    font-size: 17px;
-    color: hsl(179deg 64% 53%);
+    font-weight: normal;
+    font-size: 1rem;
+    opacity: .5;
 }
 
 h1 {
@@ -42,7 +43,8 @@ h2 {
 }
 
 p {
-    color:  hsl(204, 43%, 93%);
+    color:  white;
+    opacity: .8;
 }
 
 .body {
@@ -52,7 +54,7 @@ p {
     align-items: center;
     font-family: 'Karla', sans-serif;
     
-    background-color: hsl(218, 22%, 67%);
+    background-color: hsl(204, 43%, 93%);
     font-size: 16px;
     margin: 0;
 }
@@ -60,7 +62,7 @@ p {
 .body-card {
     display: flex;
     flex-direction: column;    
-    /* background: red; */
+    background: hsl(204, 43%, 93%);
     width: 85%;
     height: 85%;
     border-radius: 7px;
@@ -90,7 +92,7 @@ p {
     color: hsl(71, 73%, 54%);
     font-weight: 700;
     margin: 20px 0;
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 1.5;
     filter: blur(.2px);
 }
@@ -132,7 +134,7 @@ p {
     border-radius: 5px;
     border: none;
     align-self: center;
-    filter: drop-shadow(1px 2px 6px hsl(189, 86%, 29%));
+    filter: drop-shadow(1px 2px 6px hsl(179, 45%, 32%));
     font-size: 1.3rem;
     font-family: 'Karla', sans-serif;
 }
@@ -190,10 +192,24 @@ p {
 
     .body-card {
         display: grid;
+        margin: 0;
+        
+        padding: 2rem 8rem;
+    }
+
+    .top-card {
+        padding: 3rem;
     }
 
     .top-card h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .grid-wrapper {
+        border-radius: 9px;
+        box-shadow: 5px 5px 50px hsl(218, 22%, 67%);
+        margin: auto;
+        width: 75%;
     }
 
     .grid-wrapper-bottom {
@@ -201,11 +217,17 @@ p {
         grid-template-columns: 1fr 1fr;
     }
 
+    .top-card-p {
+        margin-top: -10px;
+    }
+
     .top-card p {
-        font-size: 1.4rem; 
+        font-size: 1.5rem; 
+        
     }
 
     .middle-card {
+        padding: 3rem;
         border-radius: 0 0 0 9px;
     }
 
@@ -222,13 +244,14 @@ p {
     }
 
     .bottom-card {
+        padding: 3rem;
         border-radius: 0 0 9px 0;
     }
 
     .footer {
         flex-direction: row;
         align-items: center;
-        margin-top: 150px;        
+        margin-top: 0;        
     }
 
     .foot-item {
