@@ -1,16 +1,25 @@
+/* 
+#303841
+#3A4750
+#D72323
+#EEEEEE */
+
+/* ==================== Mobile View 375px =========================== */
+
+
+
 body {
     margin: 0;
-    background-color: #d8e3e7;
+    background-color: #3a4750;
 }
 
 .body-container {
     display: flex;
     flex-direction: column;
     margin: auto;
-    border-radius: 12px;
-    width: 90vw;
+    border-radius: 0px;    
     padding: 1rem;
-    background-color: #51c4d3;
+    background-color: #eee;
     font-family: 'Overpass', sans-serif;
 }
 
@@ -18,14 +27,13 @@ body {
 /* HEADER ATTRIBUTES */
 
 header {
-    background: #d8e3e7;
+    background: #3A4750;
     display: inline-block;
     
 }
 
 .navigation-header {
-    color: #132c33;
-    background:#d8e3e7;
+    
     display: flex;
     justify-content: space-between;
     font-family: 'Overpass', sans-serif; 
@@ -46,37 +54,55 @@ header {
 
 /* HEADER ATTRIBUTES */
 
+.greet {
+    background-color: #303841;
+    border-radius: 9px;
+}
+
 .content-container {
     font-family: 'Overpass', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1rem;
 }
 
 .image-container {
+    width: 100%;
     border-radius: 12px;
     margin-top: 1rem;
-    padding: 1em 1em 0;
-    background-color: #d8e3e7;
+    padding: 2em 1em 0;
+    background-color: #D72323;
+    box-shadow: 10px 10px 15px inset #303841
+}
+
+a {
+    text-decoration: none;
+    color: #D72323;
+}
+
+a:visited, a:hover {
+    filter: brightness(.7);
 }
 
 header h3 {
-    color: #126e82;
+    color: #D72323;
 }
 
 h1 {
-    color: #126e82;
+    color: #D72323;
+    font-family: 'Staatliches', cursive;
 }
 
 h2 {
-    color: #6d6db5;
+    color:#eee;
 }
 
 .image-container img {    
     border-radius: 9px; 
-    width: 90vw;   
-    box-shadow: 10px 10px 6px #126e82;
+    width: 90%;   
+    box-shadow: 10px 10px 0px #303841;
 }
 
 .image-container img:hover {    
@@ -87,16 +113,19 @@ h2 {
 figcaption {
     font-family: 'Overpass', sans-serif;
     margin: .5rem;
-    color: #126e82;
+    color: #eee;
 }
 
 footer {
-    background-color: #d8e3e7;
+    background-color: #3a4750;
     text-align: right;
     margin: 0 1rem;
     font-family: 'Overpass', sans-serif;
-    color: #51C4D3;
+    color: #D72323;
 }
+
+
+/* ================================== Desktop Grid View 925p or higher ========================= */
 
 @media (min-width: 925px) {
     .content-container {
@@ -106,10 +135,18 @@ footer {
 
 }
 
+
+/* =============================== Above 480p Below 925p ==================================== */
+
+
 @media (min-width: 480px) {
 
     .navigation-header {
-        width: 100%;
+        width: auto;
+    }
+
+    .image-container {
+        width: auto;
     }
 
     .image-container img {
@@ -121,11 +158,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    /* header {
-
-    } */
+    }    
 
     h1 {
         text-align: center;
@@ -139,7 +172,7 @@ footer {
         display: flex;
         justify-content: flex-end;
         width: 90%;
-        margin: 2rem;
+        
     }
 }
 
