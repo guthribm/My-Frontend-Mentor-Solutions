@@ -2,7 +2,7 @@
 
 /* ==================Mobile View 450px or less===================== */
 
-body {    
+.main {    
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -175,8 +175,8 @@ section {
         display: none;
     }
 
-    body {
-        
+    .main {
+        font-size: 13px;
         display: grid;  
         grid-template-rows: 50vh 50vh;
         grid-template-columns: 25vw 25vw 25vw 25vw;
@@ -184,5 +184,30 @@ section {
                              'ylw blk blk wht';      
     }
 
+  
+    section {
+        padding: 2vw;
+    }
+
+    .daniel .section-header {
+        margin: 0 0 2vh;
+    }
+
+    .daniel p {
+        margin: 2vh 0 2vh;
+    }
+
+    .section-header-title {
+        font-size: 1.1vw;
+    }
+
+    section p {
+        font-size: 1.2vw;
+        margin: auto;
+    }
     
+    h1 {
+        margin: auto;
+        font-size: 1.8vw;
+    }
 }
