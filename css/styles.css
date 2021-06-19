@@ -115,6 +115,7 @@ figcaption {
     font-family: 'Overpass', sans-serif;
     margin: .5rem;
     color: #eee;
+    text-shadow: 5px 5px 3px #303841;
 }
 
 footer {
