@@ -46,6 +46,7 @@ article {
 }
 
 section {
+    box-shadow: 30px 30px 50px hsl(0, 0%, 81%);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -104,9 +105,9 @@ section {
 .quote {
     z-index: 1;
     position: absolute;
-    width: 32vw;
-    right: 5vw;
-    top: 0vw;
+    width: 20%;
+    right: 15%;
+    top: 0%;
     border: none;
     border-radius: 0;
 }
@@ -171,43 +172,53 @@ section {
 
 @media (min-width: 450px) {
 
-    .quote {
-        display: none;
-    }
+    
 
     .main {
+        width: 80%;
+        padding: 10em;
         font-size: 13px;
         display: grid;  
-        grid-template-rows: 50vh 50vh;
-        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 25% 25% 25% 25%;
         grid-template-areas: 'purp purp gry wht'
                              'ylw blk blk wht';      
     }
 
+    body {
+        background-color: hsl(210, 46%, 95%);
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+        width: 1440px;
+    }
+
   
     section {
-        padding: 2vw;
+        padding: 2.1em;
     }
 
     .daniel .section-header {
-        margin: 0 0 2vh;
+        margin-bottom: 1em;
     }
 
     .daniel p {
-        margin: 2vh 0 2vh;
+        margin: 1em 0 4em;
     }
 
     .section-header-title {
-        font-size: 1.1vw;
+        font-size: 1em;
     }
 
     section p {
-        font-size: 1.2vw;
+        font-size: 13px;
         margin: auto;
     }
     
     h1 {
         margin: auto;
-        font-size: 1.8vw;
+        font-size: 1.5em;
     }
 }
