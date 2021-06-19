@@ -57,6 +57,7 @@ header {
 .greet {
     background-color: #303841;
     border-radius: 9px;
+    padding: 1rem;
 }
 
 .content-container {
