@@ -72,7 +72,7 @@ header {
 .image-container {
     width: 100%;
     border-radius: 12px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 2em 1em 0;
     background-color: #bababa;
     box-shadow: 10px 10px 15px inset #303841
@@ -116,8 +116,9 @@ h2 {
 figcaption {
     font-family: 'Overpass', sans-serif;
     margin: .5rem;
-    color: #303841;
-    text-shadow: 5px 5px 5px #3a4750;
+    color: #f79400;
+    position: relative;
+    top: 2em;
     font-weight: bolder;
 }
 
