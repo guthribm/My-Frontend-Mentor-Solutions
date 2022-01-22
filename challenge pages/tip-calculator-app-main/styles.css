@@ -111,6 +111,13 @@ button {
   letter-spacing: 1px;
 }
 
+.tip-btn:hover,
+.tip-btn:active,
+.tip-btn:focus {
+  background: var(--primary-color);
+  color: var(--neutral-one);
+}
+
 #custom {
   background-color: var(--neutral-five);
   color: var(--neutral-two);
