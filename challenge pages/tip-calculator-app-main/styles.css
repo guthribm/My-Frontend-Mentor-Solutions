@@ -68,7 +68,7 @@ button {
   text-align: right;
   background-image: url("./images/icon-dollar.svg");
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: 5% 50%;
   background-color: var(--neutral-five);
   color: var(--neutral-one);
   width: 100%;
@@ -127,7 +127,7 @@ button {
   text-align: right;
   background-image: url("./images/icon-person.svg");
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: 5% 50%;
   background-color: var(--neutral-five);
   color: var(--neutral-one);
   width: 100%;
