@@ -38,6 +38,8 @@ function resetFeilds() {
   totalPlusTip.textContent = "$0.00";
   myBill.value = "";
   numOfPeople.value = "";
+  billTotal = 0;
+  totalPeople = 0;
 }
 
 five.addEventListener("click", () => calculateTotals(0.05));
