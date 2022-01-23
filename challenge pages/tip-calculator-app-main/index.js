@@ -46,7 +46,7 @@ customTip.addEventListener("input", handleCustomTip);
 
 function handleTip() {
   calculateTotals(customTipEntered * 0.01);
-  overlay.style.visibility = "hidden";
+  overlay.style.display = "none";
 }
 
 submitBtn.addEventListener("click", handleTip);
@@ -59,10 +59,11 @@ function resetFeilds() {
   billTotal = 0;
   totalPeople = 0;
   customTipEntered = 0;
+  customTip.value = "";
 }
 
 function customModal() {
-  overlay.style.visibility = "visible";
+  overlay.style.display = "flex";
 }
 
 five.addEventListener("click", () => calculateTotals(0.05));
