@@ -35,56 +35,69 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div id="overlay">
+      <div id="modal">
+        <label class="modal-input" for="custom-tip">Enter Tip %</label>
+        <input
+          type="number"
+          name="custom-tip"
+          id="custom-tip"
+          placeholder="0"
+        />
+        <p id="submit-btn" class="btn">SUBMIT</p>
+      </div>
+    </div>
     <header class="logo-container">
       <img id="logo" src="./images/logo.svg" />
     </header>
-    
+
     <main class="app-container">
       <div class="left-container">
-      <div class="bill-total">
-        <label class="label" for="bill">Bill</label>
-        <input type="number" name="bill" id="bill" placeholder="0" />
-        <!-- <img class="icon dollar" src="./images/icon-dollar.svg" /> -->
-      </div>
-      
-      <div class="num-people">
-        <p class="label">Number of People</p>
-        <input type="number" id="num-ppl" placeholder="0" />
-      </div>
-
-
-      <div class="tip-select">
-        <p class="label">Select Tip %</p>
-        <div class="tip-buttons">
-          <button class="btn tip-btn" id="five">5%</button>
-          <button class="btn tip-btn" id="ten">10%</button>
-          <button class="btn tip-btn" id="fifteen">15%</button>
-          <button class="btn tip-btn" id="twenty-five">25%</button>
-          <button class="btn tip-btn" id="fifty">50%</button>
-          <button class="btn tip-btn" id="custom">Custom</button>
+        <div class="bill-total">
+          <label class="label" for="bill">Bill</label>
+          <input type="number" name="bill" id="bill" placeholder="0" />
+          <!-- <img class="icon dollar" src="./images/icon-dollar.svg" /> -->
         </div>
-      </div>
-    </div>
-    
-      <div class="totals-container">
-        <div class="tip-per totals-sections">
-          <div class="tip-labels">
-            <p class="per-label">Tip Amount</p>
-            <p class="per-person">/ person</p>
+
+        <div class="num-people">
+          <p class="label">Number of People</p>
+          <input type="number" id="num-ppl" placeholder="0" />
+        </div>
+
+        <div class="tip-select">
+          <p class="label">Select Tip %</p>
+          <div class="tip-buttons">
+            <button class="btn tip-btn" id="five">5%</button>
+            <button class="btn tip-btn" id="ten">10%</button>
+            <button class="btn tip-btn" id="fifteen">15%</button>
+            <button class="btn tip-btn" id="twenty-five">25%</button>
+            <button class="btn tip-btn" id="fifty">50%</button>
+            <button class="btn tip-btn" id="custom">Custom</button>
           </div>
-          <div class="outputs" id="tip-amount">$0.00</div>
         </div>
+      </div>
 
-        <div class="total-per totals-sections">
-          <div class="total-plus-tip-labels">
-            <p class="per-label">Total</p>
-            <p class="per-person">/ person</p>
+      <div class="right-container">
+        <div class="totals-container">
+          <div class="tip-per totals-sections">
+            <div class="tip-labels">
+              <p class="per-label">Tip Amount</p>
+              <p class="per-person">/ person</p>
+            </div>
+            <div class="outputs" id="tip-amount">$0.00</div>
           </div>
 
-          <div class="outputs" id="total-plus-tip">$0.00</div>
-        </div>
+          <div class="total-per totals-sections">
+            <div class="total-plus-tip-labels">
+              <p class="per-label">Total</p>
+              <p class="per-person">/ person</p>
+            </div>
 
-        <button id="reset-btn" class="btn reset-btn">Reset</button>
+            <div class="outputs" id="total-plus-tip">$0.00</div>
+          </div>
+
+          <button id="reset-btn" class="btn reset-btn">Reset</button>
+        </div>
       </div>
     </main>
 
