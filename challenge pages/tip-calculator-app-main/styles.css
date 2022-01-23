@@ -14,7 +14,7 @@
 *,
 ::before,
 ::after {
-  /* border: 2px solid red; */
+  border: 2px solid red;
   box-sizing: border-box;
 }
 
@@ -26,6 +26,7 @@ body {
 
 html {
   font-family: var(--font-family);
+  font-size: 24px;
 }
 
 body {
@@ -54,6 +55,7 @@ button {
 
 .app-container {
   width: 100%;
+  max-width: 500px;
   padding: 2rem;
   background: var(--white);
   border-style: none;
@@ -174,4 +176,41 @@ button {
   letter-spacing: 0;
   text-transform: uppercase;
   margin: 1.5rem auto 0;
+}
+
+@media screen and (min-width: 500px){
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    max-width: 80vw;
+
+  }
+
+  .tip-select {
+    width: 100%
+  }
+
+  .totals-container {
+    width: 50%;
+  }
+
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .tip-buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 1fr);    
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+  
 }
