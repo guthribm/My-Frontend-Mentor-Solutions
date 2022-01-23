@@ -98,7 +98,7 @@ button {
 .app-container {
   width: 100%;
   max-width: 500px;
-  padding: 2rem;
+  padding: 1rem;
   background: var(--white);
   border-style: none;
   border-radius: 1.25rem 1.25rem 0 0;
@@ -161,6 +161,7 @@ button {
 #custom {
   background-color: var(--neutral-five);
   color: var(--neutral-two);
+  font-size: 0.8rem;
 }
 
 #num-ppl {
@@ -223,7 +224,6 @@ button {
     align-items: center;
     border-radius: 1.25rem;
     max-width: 80vw;
-    padding: 1rem;
   }
 
   .tip-select {
