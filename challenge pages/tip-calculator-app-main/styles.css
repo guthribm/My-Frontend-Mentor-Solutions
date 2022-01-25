@@ -232,7 +232,7 @@ button {
 
 @media screen and (min-width: 1000px) {
   body {
-    padding: 2rem 4rem;
+    padding: 0 4rem;
   }
 
   #bill {
