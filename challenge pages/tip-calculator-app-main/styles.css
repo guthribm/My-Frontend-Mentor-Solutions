@@ -85,6 +85,7 @@ body {
 }
 
 input {
+  font-family: var(--font-family);
   border-style: none;
   color: var(--neutral-one);
   font-weight: bold;
@@ -184,7 +185,7 @@ button {
   padding: 1.5rem;
   color: var(--neutral-five);
   margin-top: 2rem;
-  border-radius: 8px;
+  border-radius: 0.6rem;
 }
 
 .totals-sections {
@@ -221,13 +222,33 @@ button {
   margin: 1.5rem auto 0;
 }
 
-@media screen and (min-width: 800px) {
+.inactive {
+  color: var(--neutral-two);
+  background: var(--neutral-three);
+}
+
+/* ------- Media Query (Desktop 1000px)
+----------------------------------- */
+
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 2rem 4rem;
+  }
+
+  #bill {
+    font-size: 1rem;
+  }
+
+  #num-ppl {
+    font-size: 1rem;
+  }
+
   .app-container {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1.25rem;
-    max-width: 80vw;
+    max-width: 65vw;
   }
 
   .tip-select {
@@ -270,7 +291,6 @@ button {
   }
 
   .btn {
-    font-size: 0.85rem;
     padding: 0.25rem 0;
   }
 

@@ -13,16 +13,26 @@ let tipPer = document.getElementById("tip-amount");
 let totalPlusTip = document.getElementById("total-plus-tip");
 let resetBtn = document.getElementById("reset-btn");
 
-let billTotal;
-let totalPeople;
-let customTipEntered;
+let billTotal = 0;
+let totalPeople = 0;
+let customTipEntered = 0;
 
 function handleInput(event) {
+  if (event.target.value != "") {
+    resetBtn.classList.remove("inactive");
+  } else {
+    resetBtn.classList.add("inactive");
+  }
   billTotal = event.target.value;
   console.log(`billTotal: ${billTotal}`);
 }
 
 function handlePeople(event) {
+  if (event.target.value != "") {
+    resetBtn.classList.remove("inactive");
+  } else {
+    resetBtn.classList.add("inactive");
+  }
   totalPeople = event.target.value;
   console.log(`totalPpl: ${totalPeople}`);
 }
@@ -60,6 +70,7 @@ function resetFeilds() {
   totalPeople = 0;
   customTipEntered = 0;
   customTip.value = "";
+  resetBtn.classList.add("inactive");
 }
 
 function customModal() {
