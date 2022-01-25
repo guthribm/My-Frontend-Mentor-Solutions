@@ -41,10 +41,16 @@ myBill.addEventListener("input", handleInput);
 numOfPeople.addEventListener("input", handlePeople);
 
 function calculateTotals(tip) {
-  tipPer.textContent = "$" + ((billTotal / totalPeople) * tip).toFixed(2);
+  let tipTotal = (billTotal / totalPeople) * tip;
+  console.log(
+    `tip: ${typeof tip} ${tip}\n billTotal: ${typeof billTotal} ${billTotal}\n totalPeople: ${typeof totalPeople} ${totalPeople}\n tipTotal: ${typeof tipTotal} ${tipTotal}\n`
+  );
+  tipPer.textContent =
+    tipTotal.toFixed(2) === "NaN" ? "$0.00" : "$" + tipTotal.toFixed(2);
   totalPlusTip.textContent =
-    "$" +
-    (billTotal / totalPeople + (billTotal / totalPeople) * tip).toFixed(2);
+    tipTotal.toFixed(2) === "NaN"
+      ? "$0.00"
+      : "$" + (billTotal / totalPeople + tipTotal).toFixed(2);
 }
 
 function handleCustomTip(event) {
