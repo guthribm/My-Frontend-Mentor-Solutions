@@ -207,6 +207,10 @@ button {
   font-weight: bold;
 }
 
+.total-per {
+  margin-top: 1rem;
+}
+
 .outputs {
   font-size: 1.5rem;
   color: var(--primary-color);
